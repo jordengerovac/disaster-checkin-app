@@ -31,8 +31,9 @@ class Find extends React.Component {
 		const fname = event.target.fname.value
 		const lname = event.target.lname.value
 		const city = event.target.city.value
-		var newPeople = this.state.people.filter((person) => (person.lname == lname || lname == "") && 
-			(person.fname == fname || fname == "") && (person.city == city || city == ""))
+		var newPeople = this.state.people.filter((person) => (person.lname.toLowerCase() == lname.toLowerCase() || lname == "") && 
+			(person.fname.toLowerCase() == fname.toLowerCase() || fname == "") && 
+			(person.city.toLowerCase() == city.toLowerCase() || city == ""))
 		//console.log(queryResults)
 		this.setState({
 			filteredpeople: newPeople
