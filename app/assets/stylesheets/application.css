@@ -1,0 +1,205 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ * {    
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ .site {
+ 	margin: 0 !important;
+    padding: 0 !important;
+ 	height:100vh;
+ 	width: 100vw;
+	top: 0;
+	left: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 
+		"post find"
+		"about contact";
+}
+
+.site h2 {
+    margin: 150px 200px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    background: #191919;
+    opacity: 0.7;
+}
+
+.site > a:hover {
+ 	opacity: 0.7;
+ 	cursor: pointer;
+ 	transition: 0.3s;
+ }
+
+.logo-div {
+    background: #191919;
+    height: 200px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100px;
+    z-index: 100;
+
+}
+
+.main-img {
+    height: 200px;
+}
+
+ .post-status {
+    grid-area: post;
+    
+ 	background-image: url(road.jpg);
+ 	background-size: cover;
+ 	float:left;
+ 	background-color: black;
+ 	color: white;
+ }
+
+
+ .find-person {
+ 	grid-area: find;
+ 	
+ 	background-image: url(find.png);
+ 	background-size: cover;
+ 	float:left;
+ 	background-color: black;
+ 	color: white;
+}
+
+.about {
+    grid-area: about;
+    
+ 	background-image: url(toronto.jpg);
+ 	background-size: cover;
+ 	float:left;
+ 	background-color: black;
+ 	color: white;
+}
+
+.disaster-status {
+    grid-area: contact;
+    
+ 	background-image: url(tornado.jpeg);
+ 	background-size: cover;
+ 	float:left;
+ 	background-color: black;
+ 	color: white;
+}
+
+.find-page {
+    background-image: url(find.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.new-person-page {
+    background-image: url(road.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.about-page {
+    background-image: url(toronto.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.people-list {
+    min-height: 100%;
+}
+
+
+.about-page .form {
+    width: 500px;
+}
+
+.status-page {
+    background-image: url(tornado.jpeg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.form {
+    color: white;
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.form input[type = "text"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #3498DB;
+    text-align: center;
+    padding: 14px 10px;
+    color: white;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.form button {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #2ECC71;
+    text-align: center;
+    padding: 14px 10px;
+    color: white;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.form button:hover {
+    cursor: pointer;
+    background: #2ECC71;
+    transition: 0.2s;
+}
+
+.form p {
+    padding-top: 15px;
+}
+
+.person {
+    color:white ;
+    text-align: center;
+    background: #191919;
+    opacity: 0.7;
+    padding: 10px;
+    border: 1px solid white;
+}
