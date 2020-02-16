@@ -1,24 +1,3 @@
-# README
+# disaster-checkin-app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+disaster check in application developed with Ruby on Rails and React. A user is able to check in and find individuals who have already checked in, as well as check the current weather status in many global cities. This application uses API endpoints to communicate between the React frontend and the Rails backend. 
